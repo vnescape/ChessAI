@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!-- svg tag doesn't scale linearly to window size -->
+<svg height="70vh" width="90vw">
+    {{ svg }}
+</svg>
+
+<form action="/" method="POST">
+    <input type="submit" name="response" value="Reset">
+    <input type="text" name="response" id="move" placeholder="a2a3" autocomplete="off">
+    <input type="submit" value="Play">
+</form>
+<!-- script to prevennt using Post/Redirect/Get pattern -->
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+{% endblock %}
