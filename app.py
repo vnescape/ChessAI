@@ -53,7 +53,7 @@ def do_ai_move():
     board.push_san(ai_move)
     return 1
     
-depth = 3
+depth = 4
 board = chess.Board()
 
 # create instance of Flask class

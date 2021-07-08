@@ -89,6 +89,8 @@ def minimax(board ,depth, alpha, beta, maxplayer):
         return beta
 
 def run(board_state, depth):
+    global moves
+    moves = 0
     for i in range(1,depth+1):
         print("Depth:",i)
         start = time.time()
