@@ -1,5 +1,5 @@
 # ChessAI
-ChessAI (minimax with alpha-beta pruning) implemented in python and flask. The goal was to build an implementation that can easily be extended with new ai algorithms. Thus, Python is used as the backend language as it allows for easy compatibility with deep learning frameworks.
+ChessAI (minimax with alpha-beta pruning) implemented in Python and Flask. The goal was to build an implementation that can easily be extended with new ai algorithms. Thus, Python is used as the backend language as it allows for easy compatibility with deep learning frameworks.
 The diagram describes the client-server model:
 
 [<img src="images/diagram.jpg">](diagram)
