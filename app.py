@@ -22,7 +22,7 @@ def parse_input():
         return 132
     player_move_raw = request.form["response"]
     # restrict valid characters
-    player_move = re.sub('[^a-h1-8]', '', player_move_raw.lower())
+    player_move = re.sub('[^a-h1-8|O\-O]', '', player_move_raw.lower())
     # restrict length of input
     if len(player_move) > 4:
         return render_template('note.html', note="Input too long.\
